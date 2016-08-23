@@ -1,0 +1,17 @@
+<html>
+<head><title>Jquery</title></head>
+<body>
+<a href="http://acadgild.com">Web Development</a>
+</body>
+<script src="../../jquery.min.js"></script>
+<script type="application/javascript">
+    $('a').mouseenter(function(){
+        $(this).attr('href','http://google.com');
+        $(this).text('Google Site');
+    })
+    $('a').mouseleave(function(){
+        $(this).attr('href','http://acadgild.com');
+        $(this).text('Web Development');
+    })
+</script>
+</html>
